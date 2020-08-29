@@ -1,2 +1,2 @@
-Camp Project
+KHJ AI
 =============
