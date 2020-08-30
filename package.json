@@ -1,10 +1,9 @@
 {
-  "name": "camp-project",
-  "version": "1.0.0",
+  "name": "khj-ai",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
@@ -19,5 +18,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "url": "https://camp-project.herokuapp.com/"
 }
