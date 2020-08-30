@@ -13,7 +13,10 @@ $ npm install
 ### Development
 ```sh
 $ npm run dev
-# or
+```
+
+### Only use
+```sh
 $ npm run start
 ```
 
