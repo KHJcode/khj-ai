@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #00a8ff;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.header .button {
+  display: none;
+  width: 65px;
+  height: 100%;
+  background: none;
+  border: none;
+  text-align: center;
+  margin-right: -25px;
+}
+
+.header .button:focus {
+  outline: none;
+}
+
+.header .button i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.header .menu {
+  height: 65px;
+  display: flex;
+  list-style: none;
+}
+
+.header .menu .item {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin: 0 20px;
+  width: 100px;
+  text-align: center;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.header .menu .item a {
+  color: #fff;
+  transition: .3s;
+}
+
+.header .menu .item:hover {
+  border-bottom: 4px solid #2c3e50;
+}
+
+.header .menu .item:hover > a {
+  color: #2c3e50;
+}
+
+@media screen and ( max-width: 550px ) {
+  .header .menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    flex-direction: column;
+    width: 130px;
+    height: 150px;
+    align-items: center;
+    background: #bdc3c7;
+    border-radius: 10px;
+    border-top-right-radius: 40%;
+    transition: .5s;
+  }
+
+  .header .menu .item {
+    margin: 0;
+    line-height: 37.5px;
+    height: 75px;
+  }
+
+  .header .menu .item:hover {
+    border-bottom: none;
+  }
+
+  .header .menu .item a {
+    color: #000;
+  }
+
+  .header .button {
+    display: block;
+  }
+
+  .header .ds-no {
+    display: none;
+  }
+}
