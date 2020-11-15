@@ -1,7 +1,7 @@
 KHJ AI
 =============
 
-NodeJS web server running TensorFlow.js AI model.
+Web server running artificial intelligence model for realizing web personalization.
 
 ## Running the Demo
 
