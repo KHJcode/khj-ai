@@ -43,7 +43,7 @@ Promise.all([
   faceapi.nets.faceExpressionNet.loadFromUri('/models')
 ]).then(startVideo);
 
-// 비디오 실행시 호출
+// 모델 로딩 완료시 호출
 function startVideo() {
   navigator.getUserMedia (
     { video: {} },
@@ -52,6 +52,7 @@ function startVideo() {
   );
 }
 
+// 비디오 실행시 호출
 function videoPlayHandler() {
   const canvas = faceapi.createCanvasFromMedia(video); // 캔버스 생성
   document.body.append(canvas);
@@ -60,7 +61,7 @@ function videoPlayHandler() {
   };
   faceapi.matchDimensions(canvas, displaySize);
 
-  // docouemnt 룰 로드하고 2초 후 실행
+  // 화면이 렌더링되고 2초 후 웹캠 스캔 실행
   setTimeout(async () => {
     const detections = await faceapi.detectAllFaces(video,
       new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions(); // 측정 옵션 선택
