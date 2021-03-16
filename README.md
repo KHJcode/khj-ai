@@ -3,11 +3,13 @@ KHJ AI
 
 Web server running artificial intelligence model for realizing web personalization.
 
+<br/>
+
 ## Running the Demo
 
-### Project setup
+### Setup
 ```sh
-$ npm install
+$ npm i
 ```
 
 ### Development
@@ -15,7 +17,7 @@ $ npm install
 $ npm run dev
 ```
 
-### Only use
+### Use
 ```sh
 $ npm run start
 ```
